@@ -13,7 +13,6 @@
 .footer-content {
   width: 100%;
   display: grid;
-  /* grid-template-columns:  means holo jeto gula grid ace tader box size ; */
   grid-template-columns: 2fr 1fr 1fr;
   gap: 80px;
 }
@@ -30,7 +29,6 @@
 .footer-content-left li,
 .footer-content-right li,
 .footer-content-center li {
-  /* list style means li tag kno style thakbe na like buttom thakbe na */
   list-style: none;
   margin-bottom: 10px;
   cursor: pointer;

@@ -5,6 +5,7 @@
   background-size: contain;
   position: relative;
 }
+
 .header-contents {
   position: absolute;
   display: flex;
