@@ -1,16 +1,19 @@
 import React, { useContext } from "react";
 import "./Cart.css";
 import { StoreContext } from "../../context/StoreContext";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
-  const { cartItem, food_list, removeFromCart } = useContext(StoreContext);
+  const { cartItem, food_list, removeFromCart, getTotalCartAmount } =
+    useContext(StoreContext);
+  const navigate = useNavigate();
 
-  const subtotal = food_list.reduce((acc, item) => {
-    return acc + item.price * (cartItem[item._id] || 0);
-  }, 0);
+  // const subtotal = food_list.reduce((acc, item) => {
+  //   return acc + item.price * (cartItem[item._id] || 0);
+  // }, 0);
 
-  const deliveryFee = 2;
-  const total = subtotal + deliveryFee;
+  // const deliveryFee = 2;
+  // const total = subtotal + deliveryFee;
 
   return (
     <div className="cart">
@@ -54,20 +57,27 @@ const Cart = () => {
           <div>
             <div className="cart-total-details">
               <p>Subtotal</p>
-              <p>${subtotal.toFixed(2)}</p>
+              <p>${getTotalCartAmount().toFixed(2)}</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <p>Delivery Fee</p>
-              <p>${deliveryFee.toFixed(2)}</p>
+              <p>${getTotalCartAmount() === 0 ? 0 : 2}</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <b>Total</b>
-              <b>${total.toFixed(2)}</b>
+              <b>
+                $
+                {getTotalCartAmount() === 0
+                  ? getTotalCartAmount().toFixed(2)
+                  : (getTotalCartAmount() + 2).toFixed(2)}
+              </b>
             </div>
           </div>
-          <button>PROCEED TO CHECKOUT</button>
+          <button onClick={() => navigate("/order")}>
+            PROCEED TO CHECKOUT
+          </button>
         </div>
         <div className="cart-promocode">
           <div>
