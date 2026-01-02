@@ -1,12 +1,43 @@
-# React + Vite
+🍔 Food Delivery Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive Food Delivery web application built using React.js, designed to simulate a real-world online food ordering experience. This project focuses on usability, responsiveness, and core e-commerce functionalities.
 
-Currently, two official plugins are available:
+🚀 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Food Delivery application allows users to browse food items, add them to a cart, and place orders through a simple and intuitive interface. The project helped me gain hands-on experience with React.js and modern frontend development practices.
 
-## Expanding the ESLint configuration
+✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🏠 Home Page with clean and user-friendly UI
+
+📋 Menu Listing to display available food items
+
+🔐 User Login System
+
+🛒 Cart-Based Ordering System
+
+📱 Mobile-Friendly & Responsive Design
+
+⚡ Smooth navigation using React components
+
+🛠 Technologies Used
+
+HTML5
+
+CSS3
+
+JavaScript (ES6+)
+
+React.js
+
+📚 What I Learned
+
+Building reusable React components
+
+Managing application state
+
+Creating a responsive UI for multiple devices
+
+Implementing basic cart functionality
+
+Structuring a frontend project cleanly
